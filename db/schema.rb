@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_17_233345) do
+ActiveRecord::Schema.define(version: 2020_01_17_234235) do
 
   create_table "hyperglots", force: :cascade do |t|
     t.string "name"
@@ -34,6 +34,12 @@ ActiveRecord::Schema.define(version: 2020_01_17_233345) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "hyperglot_id"
     t.integer "language_teacher_id"
+  end
+
+  create_table "study_comments", force: :cascade do |t|
+    t.string "comments"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "teacher_ratings", force: :cascade do |t|
