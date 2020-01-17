@@ -1,0 +1,2 @@
+class HyperglotsController < ApplicationController
+end

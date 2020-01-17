@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  language_being_studied_1: MyString
+  language_being_studied_2: MyString
+  language_being_studied_3: MyString
+
+two:
+  name: MyString
+  language_being_studied_1: MyString
+  language_being_studied_2: MyString
+  language_being_studied_3: MyString

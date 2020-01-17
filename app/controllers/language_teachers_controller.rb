@@ -1,0 +1,2 @@
+class LanguageTeachersController < ApplicationController
+end
