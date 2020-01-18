@@ -1,5 +1,10 @@
 # README
 
+TO DO:
+
+Check db databases to see that proper IDS are there
+e.g.  study_comments seems to be missing hyperglot_id`                                                                          
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

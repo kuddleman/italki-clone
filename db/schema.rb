@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_17_234235) do
+ActiveRecord::Schema.define(version: 2020_01_18_201507) do
 
   create_table "hyperglots", force: :cascade do |t|
     t.string "name"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2020_01_17_234235) do
   end
 
   create_table "lessons", force: :cascade do |t|
-    t.datetime "lesson_date"
+    t.string "lesson_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "hyperglot_id"
