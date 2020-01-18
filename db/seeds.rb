@@ -22,10 +22,20 @@ LanguageTeacher.create(name: "Charles", language_taught: "Portuguese")
 LanguageTeacher.create(name: "Richard", language_taught: "Fijian")
 LanguageTeacher.create(name: "Kenji", language_taught: "Japanese")
 
-Lesson.create(lesson_date: "Feb 1, 2019", hyperglot_id: 1, language_teach_id: 2)
+Lesson.create(lesson_date: "Feb 1, 2019", hyperglot_id: 1, language_teacher_id: 2)
 
-Lesson.create(lesson_date: "Mar 20, 2019", hyperglot_id: 2, language_teach_id: 1)
+Lesson.create(lesson_date: "Mar 20, 2019", hyperglot_id: 2, language_teacher_id: 1)
 
-Lesson.create(lesson_date: "Feb 1, 2019", hyperglot_id: 5, language_teach_id: 6)
+Lesson.create(lesson_date: "Feb 1, 2019", hyperglot_id: 5, language_teacher_id: 6)
 
-StudyComment.create(comments)
+StudyComment.create(comments: "Look what I learned today!", hyperglot_id: 3)
+StudyComment.create(comments: "What fun!", hyperglot_id: 3)
+StudyComment.create(comments: "Je ne sais quoi!", hyperglot_id: 2)
+StudyComment.create(comments: "Quatsch!", hyperglot_id: 6)
+StudyComment.create(comments: "Grammar notes!", hyperglot_id: 1)
+StudyComment.create(comments: "Now I can swear in Chinese!", hyperglot_id: 6)
+
+TeacherRating.create(rating: 5, comments: "Gute Stunde.  Hab' was gelernt!", hyperglot_id: 2)
+TeacherRating.create(rating: 4, comments: "Tres bien", hyperglot_id: 1)
+TeacherRating.create(rating: 3, comments: "Wat voor een leuke ervaring!", hyperglot_id: 5)
+TeacherRating.create(rating: 2, comments: "Gimme more!!!!", hyperglot_id: 2)
