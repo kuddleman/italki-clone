@@ -1,0 +1,27 @@
+<h1>This is my Hyperglot Edit page</h1>
+
+<h1>This is the NEW HYPERGLOT Page</h1>
+
+
+<h2>Please Update Your Information:</h2><br>
+
+<%= form_for(@hyperglot) do |f| %>
+<%= f.label :name %>: <%= f.text_field :name %><br><br>
+
+<p><%= f.label :language_being_studied_1, "1st language you're studying:" %>
+<%= f.text_field :language_being_studied_1 %></p><br>
+
+<p><%= f.label :language_being_studied_2, "2nd language you're studying" %>
+<%= f.text_field :language_being_studied_2 %></p><br>
+
+<p><%= f.label :language_being_studied_3, "3rd language you're studying" %>
+<%= f.text_field :language_being_studied_3 %></p><br>
+
+<%= f.submit "Change My Info!!" %>
+
+<% end %>
+
+
+<h1>You can also delete your profile by clicking "I'm Done" below:</h1>
+
+<%= link_to "I'm SOOO DONE!", hyperglot_path(@hyperglot), data: {method: :delete}%>

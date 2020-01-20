@@ -4,26 +4,41 @@ HYPERGLOT:
 1. There should be a show page for each hyperglot listing:
     a.  their name
     b.  a list of the languages they are studying
-    DONE
-
+  ## DONE  
+   
+    
 2.  There should be a hyperglot index page listing all hyperglots.
-DONE
+## DONE
 
 When you click on their name, you go to a show page for that hyperglot 
-DONE
+## DONE
 
-3.  On the hyperglot show page, add a list of the lessons the hyperglot has had.  For each lesson, show: date of lesson and language taught
+3.  On the hyperglot show page, add a list of the lessons the hyperglot has had.  For each lesson, show: date of lesson
+## DONE
+
+ and language taught
 
 Each lesson date should link to the show page for that lesson
 
 
 4.  There should be a new hyperglot page for new hyperglots.  They
 will enter name and up to three languages they are studying.
+## DONE
 
 5. validation:  make sure on hyperglot/new that they enter at least one language
 
+6.  The hyperglot can edit their page
+    Then redirect to the hyperglot index page
+## DONE
+
+7.  The hyperglot can delete themselves
+## DONE
 
 LANGUAGE TEACHER
+
+2.  There should be an index page for all the teachers.
+   
+    Each name should link to their show page.
 
 1.  There should be a page for each language teacher listing
     a.  their name
@@ -34,7 +49,7 @@ LANGUAGE TEACHER
 TEACHER RATING
 1.  Their should be a 'new rating' page with pulldown menus so
     the hyperglot can enter their review(rating and comment)
-    It doesn't need a hyperglot name as the ratings are anonymous
+    
 
 2.  The rating should should be an integer from 1 to 5 (inclusive)
 
