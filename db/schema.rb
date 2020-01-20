@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_18_203503) do
+ActiveRecord::Schema.define(version: 2020_01_20_170152) do
 
   create_table "hyperglots", force: :cascade do |t|
     t.string "name"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_01_18_203503) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "hyperglot_id"
+    t.string "author"
   end
 
   create_table "teacher_ratings", force: :cascade do |t|
