@@ -37,12 +37,18 @@ will enter name and up to three languages they are studying.
 LANGUAGE TEACHER
 
 2.  There should be an index page for all the teachers.
-   
-    Each name should link to their show page.
+    ## DONE
 
+    Each name should link to their show page.
+    ## DONE
+    
 1.  There should be a page for each language teacher listing
     a.  their name
+    ## DONE
     b.  the language they teach
+    ## DONE
+
+
     c.  Their average rating***
 
 

@@ -3,6 +3,6 @@
 
 <% @language_teachers.each do |teacher| %>
 
-<p>Teacher's name:<%= teacher.name %>,
+<p>Teacher's name:<%= link_to teacher.name, language_teacher_path(teacher) %>,
 Language taught: <%= teacher.language_taught %></p>
 <% end %>
