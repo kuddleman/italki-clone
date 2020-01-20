@@ -41,7 +41,7 @@ LANGUAGE TEACHER
 
     Each name should link to their show page.
     ## DONE
-    
+
 1.  There should be a page for each language teacher listing
     a.  their name
     ## DONE
@@ -54,7 +54,13 @@ LANGUAGE TEACHER
 
 TEACHER RATING
 1.  Their should be a 'new rating' page with pulldown menus so
-    the hyperglot can enter their review(rating and comment)
+    the hyperglot can enter their review(rating and comment), then redirect to the rating index page
+
+1A. There is an index page which give the Hyperglot the choice to do the following:
+
+ a. view a Teacher's rating page with their name, comments made about them and an overall rating between 1 and 5
+
+ b.  Leave a new rating using dropdown menus: one for the teacher, the other for the rating
     
 
 2.  The rating should should be an integer from 1 to 5 (inclusive)
@@ -91,7 +97,7 @@ STUDY COMMENTS
     1.  their name from a dropdown list of choices
     2.  The comment
 
-3. A Hyperglot and update a comment
+3. A Hyperglot can update a comment
 
 4. A Hyperglot can delete a comment
 

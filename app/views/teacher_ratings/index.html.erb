@@ -1,0 +1,21 @@
+<h1>This is the Teachers' Rating Page</h1>
+
+<h2>What would you like to do?<h2>
+
+<h3>1.  View a teacher's rating and comments about their lessons?</h3>
+
+  <p>Please Click on the name of a teacher below to see their comments and ratings</p>
+  
+   <% @teacher_ratings.each do |teacher| %>
+       <%= teacher.language_teacher.name %> 
+       <% end %>
+
+<h3>2.  Would you like to leave comments and a rating about a teacher?</h3>
+
+   <%
+=begin%>
+ <p>Please fill out this form:</p>
+  <%= form_for()>
+   <%= f.collection_select :language_teacher_id, LanguageTeacher.all, :id, :name%> 
+<%
+=end%>
