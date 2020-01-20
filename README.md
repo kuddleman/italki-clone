@@ -1,14 +1,18 @@
 # README
 
 HYPERGLOT:
-1. There should be a page for each hyperglot listing:
+1. There should be a show page for each hyperglot listing:
     a.  their name
     b.  a list of the languages they are studying
+    DONE
 
 2.  There should be a hyperglot index page listing all hyperglots.
-When you click on their name, you go to a show page for that hyperglot 
+DONE
 
-3.  On the hyperglot show page, add a list of the lessons the hyperglot has appeared in.  For each lesson, show: date of lesson and language taught
+When you click on their name, you go to a show page for that hyperglot 
+DONE
+
+3.  On the hyperglot show page, add a list of the lessons the hyperglot has had.  For each lesson, show: date of lesson and language taught
 
 Each lesson date should link to the show page for that lesson
 

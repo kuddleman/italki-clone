@@ -1,0 +1,27 @@
+<h1>This is the Hyperglot SHOW page</h1>
+
+
+  <h2><%= @hyperglot.name %></h2>
+
+  <p>And these are the languages you're studying:</p>
+   
+   <ul>
+    <li><%= @hyperglot.language_being_studied_1 %></li>
+    <li><%= @hyperglot.language_being_studied_2 %></li>
+    <li><%= @hyperglot.language_being_studied_3 %></li>
+   </ul>
+
+   <h2>Here is a list of the lessons you have had:</h2>
+     <ul>
+     <% @hyperglot.lessons.each do |lesson| %>
+         
+           <li>Lesson date: <%= lesson.lesson_date %></li>
+           <%
+=begin%>
+ <li><%= lesson.teacher %></li> 
+<%
+=end%>
+           <li><%= lesson.teachers %></li>
+     <% end %>
+     </ul>
+
