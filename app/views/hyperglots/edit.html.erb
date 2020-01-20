@@ -1,8 +1,5 @@
 <h1>This is my Hyperglot Edit page</h1>
 
-<h1>This is the NEW HYPERGLOT Page</h1>
-
-
 <h2>Please Update Your Information:</h2><br>
 
 <%= form_for(@hyperglot) do |f| %>
@@ -21,7 +18,14 @@
 
 <% end %>
 
+<br><br>
+<h1>You can also delete your profile by clicking "Be seein' ya!" below:</h1>
 
-<h1>You can also delete your profile by clicking "I'm Done" below:</h1>
+<%
+=begin%>
+ <%= link_to "I'm SOOO DONE!", hyperglot_path(@hyperglot), data: {method: :delete}%> 
+<%
+=end%>
 
-<%= link_to "I'm SOOO DONE!", hyperglot_path(@hyperglot), data: {method: :delete}%>
+<%= button_to "What he said...", { action: "destroy", id: @hyperglot },
+                                method: :delete, data: { confirm: "Are you sure?" } %>
