@@ -99,12 +99,13 @@ STUDY COMMENTS
     1.  their name from a dropdown list of choices
     2.  The comment
     ## DONE
-    
+
 3. A Hyperglot can update a comment
+   ## DONE
 
 4. A Hyperglot can delete a comment
 
-
+## DONE
 
 
 

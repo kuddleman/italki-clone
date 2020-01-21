@@ -1,0 +1,20 @@
+<h1>This is the EDIT AN EXISTING COMMENT FORM Page</h1>
+
+<%= form_for(@study_comment) do |f| %>
+ 
+
+
+  <%if @study_comment.hyperglot and @study_comment.hyperglot.name %>
+        
+         <p>Your Name: <%= @study_comment.hyperglot.name %></p> <br>
+  <% end %>
+  <%= f.label :comments %>
+  <%= f.text_field :comments %><br><br>
+
+  <%= f.submit %>
+
+<% end %>  
+
+<h1>Here is the button to delete your comment:</h1>
+
+<%= link_to "Delete My Comment", study_comment_path(@study_comment), data: {method: :delete} %>
