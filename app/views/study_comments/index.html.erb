@@ -1,15 +1,17 @@
 <h1>Here are all the study comments:</h1>
 
- <ul>
+ <div>
    <% @study_comments.each do |comment| %>
-    <li>
+    <p>
       <%= comment.comments %>
-    </li>
-    <li>
-      <%= comment.hyperglot_id.name %>
-    </li>
+    </p>
+       
+      <%if comment.hyperglot and comment.hyperglot.name %>
+        <p><%= comment.hyperglot.name %></p> <br>
+      <% end %>
+
 
    <% end %>
 
 
- </ul>
+ </div>

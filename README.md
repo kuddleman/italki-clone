@@ -73,21 +73,17 @@ TEACHER RATING
 
 LESSONS (JOIN TABLE)
 
-1. List all lessons by hyperglot, teacher name and language taught
-
+1. Index: List all lessons by hyperglot, teacher name and language taught
+## DONE
 1A. Show each lesson giving the name of the Hyperglot, the teacher name and language taught
 ## DONE
 
 2.  New Lesson Form.  Choose an existing hyperglot from a select dropdown
    and a teacher from a select dropdown and create a new lesson. Submit the form. After submitting the form the hyperglot should be directed to the lessons show page.
+   ## DONE
 
-3. Lesson show page.  On the lesson show page, the hyperglot should see:
-     Lesson date
-     name of the teacher
-     name of the hyperglot
-     The language the teacher taught
 
-     The teacher name should link to the teacher's show page
+    ??? The teacher name should link to the teacher's show page
      The hyperglot name should link to the hyperglot's show page
 
 
@@ -96,10 +92,14 @@ STUDY COMMENTS
 1.  List all study comments.  Show:
     Name of author
     Comment
+    ## DONE
+
+    
 2.  Make a new study comments form. Author must enter:
     1.  their name from a dropdown list of choices
     2.  The comment
-
+    ## DONE
+    
 3. A Hyperglot can update a comment
 
 4. A Hyperglot can delete a comment

@@ -8,6 +8,23 @@ class LessonsController < ApplicationController
     @lesson = Lesson.find(params[:id])
   end
 
+  def new 
+   @lesson = Lesson.new
+  end
 
+  def create 
+    @lesson = Lesson.new(lesson_params)
 
+    if @lesson.save
+      redirect_to lesson_path(@lesson)
+    else
+      redirect_to new_lesson_path 
+    end
+  end
+
+private 
+
+  def lesson_params
+    params.require(:lesson).permit(:lesson_date, :hyperglot_id, :language_teacher_id)
+  end
 end

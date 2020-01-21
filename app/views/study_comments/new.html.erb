@@ -1,0 +1,12 @@
+<h1>This is the MAKE A NEW STUDY COMMENT Page</h1>
+
+<%= form_for(@study_comment) do |f| %>
+  <%= f.label :name %> 
+  <%= f.collection_select :hyperglot_id, Hyperglot.all, :id, :name %><br><br>
+  
+  <%= f.label :comments %>
+  <%= f.text_field :comments %><br><br>
+
+  <%= f.submit %>
+
+<% end %>  
