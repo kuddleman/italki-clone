@@ -75,6 +75,9 @@ LESSONS (JOIN TABLE)
 
 1. List all lessons by hyperglot, teacher name and language taught
 
+1A. Show each lesson giving the name of the Hyperglot, the teacher name and language taught
+## DONE
+
 2.  New Lesson Form.  Choose an existing hyperglot from a select dropdown
    and a teacher from a select dropdown and create a new lesson. Submit the form. After submitting the form the hyperglot should be directed to the lessons show page.
 

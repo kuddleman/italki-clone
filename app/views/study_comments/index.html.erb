@@ -1,0 +1,15 @@
+<h1>Here are all the study comments:</h1>
+
+ <ul>
+   <% @study_comments.each do |comment| %>
+    <li>
+      <%= comment.comments %>
+    </li>
+    <li>
+      <%= comment.hyperglot_id.name %>
+    </li>
+
+   <% end %>
+
+
+ </ul>
