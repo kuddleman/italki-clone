@@ -1,0 +1,18 @@
+<h1>This is the Teacher Rating NEW Page</h1>
+
+
+
+<h2>Please choose a teacher from this pulldown list:</h2>
+
+<%= form_for(@teacher_rating) do |f| %>
+  <%= f.collection_select :language_teacher_id, LanguageTeacher.all, :id, :name %>
+<h3>leave your comments about this teacher here:</h3>
+<%= f.label :comments %>: <%= f.text_field :comments %>
+
+<h3>And lastly, leave a rating from 1 to 5:<h3>
+<%= f.label :rating %>: <%= f.text_field :rating %><br><br>
+
+<%= f.submit %>
+
+  <% end %>
+

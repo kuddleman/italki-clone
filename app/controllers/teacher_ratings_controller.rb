@@ -7,6 +7,19 @@ class TeacherRatingsController < ApplicationController
     @teacher_rating = TeacherRating.find(params[:id])
   end
 
+  def new 
+    @teacher_rating = TeacherRating.new
+  end
+
+  def create 
+    @teacher_rating = TeacherRating.create(teacher_rating_params)
+    if @teacher_rating.save
+      redirect_to teacher_ratings_path(@teacher_rating)
+    else
+      render :new
+    end
+  end
+
   private
 
   def teacher_rating_params 
