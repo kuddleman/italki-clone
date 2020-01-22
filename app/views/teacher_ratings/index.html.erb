@@ -6,8 +6,18 @@
   <ul> 
 
  <% @teacher_ratings.each do |teacher| %>
-      
-        <li><%= link_to teacher.language_teacher.name, '/teacher_ratings/:id', to: 'teacher_ratings#show'  %></li>
+        <%
+=begin%>
+ "/teacher_ratings/#{teacher.id}" 
+ language_teacher_path(teacher.id)
+<%
+=end%>
+        <li><%= link_to teacher.language_teacher.name, teacher %></li>
+        <%
+=begin%>
+ <li><%= link_to teacher.language_teacher.name, teacher_rating_path  %></li> 
+<%
+=end%>
        <% end %>       
 </ul>
 

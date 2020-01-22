@@ -9,7 +9,7 @@ HYPERGLOT:
 
   3.  On the hyperglot show page, add a list of the lessons the hyperglot has had.  For each lesson, show: date of lesson
   Each lesson date should link to the show page for that lesson
-******NOT DONE**************
+## DONE
    
     
 2.  There should be a hyperglot index page listing all hyperglots.
@@ -36,7 +36,7 @@ will enter name and up to three languages they are studying.
 LANGUAGE TEACHER
 
 2.  There should be an index page for all the teachers.
-    ******BUG: IT IS SHOWING DOUBLE********
+   ## DONE
 
     Each name should link to their show page.
     ## DONE
@@ -54,13 +54,13 @@ LANGUAGE TEACHER
 TEACHER RATING
 1.  Their should be a 'new rating' page with pulldown menus so
     the hyperglot can enter their review(rating and comment), then redirect to the rating index page.
-
-    **************I have to add pull down list for hyperglot name***********AZf
+    ## DONE
+    
 
 1A. There is an index page which lists the teacher that have ratings.
 ## DONE
 Each teacher's name is a link to a show page
-*****LINK DOES NOT WORK *****
+## DONE
 
 2.  The show page shows each teacher's name, their comments
     ## DONE
@@ -74,7 +74,7 @@ Each teacher's name is a link to a show page
 
 - Add handling for this error to the Appearance create action.
 - The validation error should be shown on the Appearance creation form when a user attempts to save an appearance with an invalid rating.
-********TO DO*********
+********VALIDATION TO DO*********
 
 LESSONS (JOIN TABLE)
 
@@ -83,9 +83,9 @@ LESSONS (JOIN TABLE)
 1A. Show each lesson giving the name of the Hyperglot, the teacher name and language taught
 ## DONE
 
-Show page: The teacher name should link to the teacher's show page
+SHOW PAGE: The teacher name should link to the teacher's show page
      The hyperglot name should link to the hyperglot's show page
-      ********NEED TO DO*********
+## DONE
 
 
 2.  New Lesson Form.  Choose an existing hyperglot from a select dropdown

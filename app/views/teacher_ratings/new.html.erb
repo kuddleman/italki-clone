@@ -5,8 +5,10 @@
 <h2>Please choose a teacher from this pulldown list:</h2>
 
 <%= form_for(@teacher_rating) do |f| %>
-  <%= f.collection_select :language_teacher_id, LanguageTeacher.all, :id, :name %>
-<h3>leave your comments about this teacher here:</h3>
+  <%= f.collection_select :language_teacher_id, LanguageTeacher.all, :id, :name %><br>
+<h2>And select your name from this pulldown list:</h2> 
+<%= f.collection_select :hyperglot_id, Hyperglot.all, :id, :name %><br>
+<h3>Leave your comments about this teacher here:</h3>
 <%= f.label :comments %>: <%= f.text_field :comments %>
 
 <h3>And lastly, leave a rating from 1 to 5:<h3>

@@ -1,8 +1,11 @@
-<h1>This is an index of all the Language Teachers</h1>
+<h1>This is an list of all the Language Teachers:</h1>
+
+<h2>Click on a name to find out more about them:</h2>
 
 
 <% @language_teachers.each do |teacher| %>
 
-<p>Teacher's name:<%= link_to teacher.name, language_teacher_path(teacher) %>,
-Language taught: <%= teacher.language_taught %></p>
+<p>Teacher's name:<%= link_to teacher.name, language_teacher_path(teacher) %>,</p>
+ <p>Language taught: <%= teacher.language_taught %></p><br>
 <% end %>
+ 

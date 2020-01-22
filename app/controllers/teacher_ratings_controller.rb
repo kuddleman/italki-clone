@@ -14,7 +14,7 @@ class TeacherRatingsController < ApplicationController
   def create 
     @teacher_rating = TeacherRating.create(teacher_rating_params)
     if @teacher_rating.save
-      redirect_to teacher_ratings_path(@teacher_rating)
+      redirect_to teacher_ratings_index_path(@teacher_rating)
     else
       render :new
     end

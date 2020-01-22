@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'teacher_ratings/index'
+ 
   resources :hyperglots
   resources :lessons, only: [:index, :show, :new, :create]
   resources :language_teachers, only: [:index, :show]

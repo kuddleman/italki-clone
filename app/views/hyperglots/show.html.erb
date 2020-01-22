@@ -11,13 +11,16 @@
     <li><%= @hyperglot.language_being_studied_3 %></li>
    </ul>
 
-   <h2>Here is a list of the lessons you have had:</h2>
+   <h2>Here is a list of the dates on which you had a lesson:</h2>
+
+   <h3>Click on a date to go to that lesson's info page:</h3>
      <ul>
      <% @hyperglot.lessons.each do |lesson| %>
          
-           <li>Lesson date: <%= lesson.lesson_date %></li>
            
-           <li>XXXXX</li>
+           <li>Lesson date: <%= link_to lesson.lesson_date, lesson_path(lesson) %></li>
+           
+           
      <% end %>
      </ul>
 
