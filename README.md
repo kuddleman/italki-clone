@@ -56,16 +56,16 @@ TEACHER RATING
 1.  Their should be a 'new rating' page with pulldown menus so
     the hyperglot can enter their review(rating and comment), then redirect to the rating index page
 
-1A. There is an index page which give the Hyperglot the choice to do the following:
+1A. There is an index page which lists the teacher that have ratings.
+Each teacher's name is a link to a show page
+## DONE
 
- a. view a Teacher's rating page with their name, comments made about them and an overall rating between 1 and 5
-
- b.  Leave a new rating using dropdown menus: one for the teacher, the other for the rating
-    
+2.  The show page shows each teacher's name, their comments
+    ## DONE
 
 2.  The rating should should be an integer from 1 to 5 (inclusive)
 
-3.  The rating on an Appearance should be between 1 and 5 (inclusive - `1` and `5` are okay).
+
 
 - Add handling for this error to the Appearance create action.
 - The validation error should be shown on the Appearance creation form when a user attempts to save an appearance with an invalid rating.

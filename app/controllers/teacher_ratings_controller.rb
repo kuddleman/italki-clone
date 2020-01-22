@@ -3,12 +3,15 @@ class TeacherRatingsController < ApplicationController
     @teacher_ratings = TeacherRating.all
   end
 
-  def teacher_name_array
-    @name_array = []
-    @teacher_ratings = TeacherRating.all
-    @teacher_ratings.each do |teacher|
-      name_array << teacher.language_teacher.name
-    end
-    @name_array
+  def show
+    @teacher_rating = TeacherRating.find(params[:id])
   end
+
+  private
+
+  def teacher_rating_params 
+    params.require(:teacher_rating).permit(:rating, :comments, :language_teacher_id, :hyperglot_id)
+  end
+
+  
 end
