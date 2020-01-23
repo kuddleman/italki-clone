@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
- 
+  get 'about', to: 'static#about'
+  root 'static#about'
   resources :hyperglots
   resources :lessons, only: [:index, :show, :new, :create]
   resources :language_teachers, only: [:index, :show]

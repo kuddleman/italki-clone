@@ -1,5 +1,15 @@
 # README
 
+I need a couple of model methods
+
+Add some CSS
+
+Think about USER Experience
+
+   navigation bar
+
+
+
 HYPERGLOT:
 1. There should be a show page for each hyperglot listing:
     a.  their name  
@@ -65,18 +75,19 @@ Each teacher's name is a link to a show page
 2.  The show page shows each teacher's name, their comments
     ## DONE
 
-3.  The show page show the teacher's rating
-  ******NEED TO DO*******   
+3.  The show page shows the teacher's average rating
+  ******CUSTOM METHOD TO DO*******   
 
 2.  The rating should should be an integer from 1 to 5 (inclusive)
-  *******NEED TO SET IN VALIDATIONS*****
+## DONE
 
 
-- Add handling for this error to the Appearance create action.
-- The validation error should be shown on the Appearance creation form when a user attempts to save an appearance with an invalid rating.
-********VALIDATION TO DO*********
+
 
 LESSONS (JOIN TABLE)
+
+1. ADD DATE TO SHOW PAGE
+## DONE
 
 1. Index: List all lessons by hyperglot, teacher name and language taught
 ## DONE
@@ -92,8 +103,8 @@ SHOW PAGE: The teacher name should link to the teacher's show page
    and a teacher from a select dropdown and create a new lesson. Submit the form. After submitting the form the hyperglot should be directed to the lessons show page.
    ## DONE
 
-
-    
+3. Add lesson date to New Lesson page 
+    ## DONE
 
 
 STUDY COMMENTS

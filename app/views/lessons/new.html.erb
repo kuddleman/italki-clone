@@ -10,6 +10,8 @@
   <%= f.label :Teacher %>
   <%= f.collection_select :language_teacher_id, LanguageTeacher.all, :id, :name %><br><br>
   
+  <%= f.label :Lesson_date %>:<%= f.text_field :lesson_date %><br><br>
+
   <%= f.submit %>
 
 <% end %>

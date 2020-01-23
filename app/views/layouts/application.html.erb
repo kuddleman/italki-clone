@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <h1>Welcome to the Italki Clone</h1>
+    <%= link_to "Home", about_path %>
+    <%= link_to "Hyperglots", hyperglots_path %>
+    <%= link_to "Language Teachers", language_teachers_path %>
+    <%= link_to "Lessons", lessons_path %>
+    <%= link_to "Study Comments", study_comments_path %>
+    <%= link_to "Teacher Ratings", teacher_ratings_path %>
     <%= yield %>
+    <footer>
+     <p>Here's where I'll put a footer</p>
+    </footer>
   </body>
 </html>

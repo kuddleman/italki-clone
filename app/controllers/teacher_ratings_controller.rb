@@ -20,6 +20,19 @@ class TeacherRatingsController < ApplicationController
     end
   end
 
+  def get_the_average_rating
+
+    sum_of_ratings = 0
+
+    #for a given teacher
+    #iterate over their ratings
+      # and for each iteration, add the rating to sum_of_ratings
+
+    #after the iteration is finished, set average_rating to sum_of_ratings divided by LanguageTeacher.all.count  
+    # return average_rating
+
+  end
+
   private
 
   def teacher_rating_params 
