@@ -1,10 +1,13 @@
 class TeacherRatingsController < ApplicationController
   def index
     @teacher_ratings = TeacherRating.all
+    @average_teacher_rating = TeacherRating.average_rating
   end
 
   def show
     @teacher_rating = TeacherRating.find(params[:id])
+    @average_teacher_rating = TeacherRating.ratings_for_teacher(params[:id]).average_rating
+
   end
 
   def new 
@@ -20,18 +23,7 @@ class TeacherRatingsController < ApplicationController
     end
   end
 
-  def get_the_average_rating
-
-    sum_of_ratings = 0
-
-    #for a given teacher
-    #iterate over their ratings
-      # and for each iteration, add the rating to sum_of_ratings
-
-    #after the iteration is finished, set average_rating to sum_of_ratings divided by LanguageTeacher.all.count  
-    # return average_rating
-
-  end
+  
 
   private
 
