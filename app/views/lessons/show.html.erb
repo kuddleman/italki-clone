@@ -4,10 +4,10 @@
 <p>Lesson Date: <%= @lesson.lesson_date %></p>
 
  <% if @lesson.hyperglot and @lesson.hyperglot.name %>
-   <p> Hyperglot's name: <%= link_to @lesson.hyperglot.name, hyperglot_path %></p>  
+   <p class="links"> Hyperglot's name: <%= link_to @lesson.hyperglot.name, hyperglot_path %></p>  
  <% end %>
 
-<p> Language Teacher's name: <%= link_to @lesson.language_teacher.name, language_teacher_path %></p>
-<p> Language Studied: <%= @lesson.language_teacher.language_taught %></p>
+<p class="links"> Language Teacher's name: <%= link_to @lesson.language_teacher.name, language_teacher_path %></p>
+<p class="links"> Language Studied: <%= @lesson.language_teacher.language_taught %></p>
 </div>
-<h2>Ready to book a new lesson? <%= link_to "Let's do it!", new_lesson_path %></h2>
+<h2 class="links">Ready to book another lesson? <%= link_to "Let's do it!", new_lesson_path %></h2>

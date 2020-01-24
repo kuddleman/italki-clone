@@ -1,12 +1,12 @@
 <h1>This is the LESSON INDEX page</h1>
 
 <h2>Click on a lesson date to find out more about it, or....</h2>
-<h2><%= link_to "Book a new lesson", new_lesson_path %></h2>
+<h2 class="links"><%= link_to "Book a new lesson", new_lesson_path %></h2>
 
 <% @lessons.each do |lesson| %>
-   <p>Lesson Date: <%= link_to lesson.lesson_date, lesson_path(lesson)%></p>
-   <p>Teacher Name: <%= lesson.language_teacher.name %>
-   <p>Language Taught: <%= lesson.language_teacher.language_taught %><br><br>
+   <p class="links">Lesson Date: <%= link_to lesson.lesson_date, lesson_path(lesson)%></p>
+   <p class="links">Teacher Name: <%= lesson.language_teacher.name %>
+   <p class="links">Language Taught: <%= lesson.language_teacher.language_taught %><br><br>
 <% end %>
 
 

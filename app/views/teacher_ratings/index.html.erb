@@ -4,7 +4,7 @@
   Average Teacher Rating: <%= @average_teacher_rating %>
 </div>
   <h2>Please Click on the name of a teacher below to see their comments and ratings page</h2>
-  <p><p><%= link_to "Or leave a teacher a rating here...", new_teacher_rating_path %></p></p>
+  <p class="links"><%= link_to "Or leave a teacher a rating here...", new_teacher_rating_path %></p></p>
   <ul class="teacher-links links"> 
 
  <% @teacher_ratings.each do |teacher| %>
