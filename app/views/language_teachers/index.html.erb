@@ -1,8 +1,10 @@
 <h1>This is an list of all the Language Teachers:</h1>
 
 <h2>Click on a name to find out more about them:</h2>
+<br>
+<p><%= link_to "Or leaving them a rating here...", new_teacher_rating_path %></p>
 
-
+<br>
 <% @language_teachers.each do |teacher| %>
 
 <p class="links">Teacher's name:&nbsp;<%= link_to teacher.name, language_teacher_path(teacher) %>,</p>

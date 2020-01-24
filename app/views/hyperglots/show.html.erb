@@ -3,7 +3,11 @@
 
   <h2><%= @hyperglot.name %></h2>
 
-  <p>And these are the languages you're studying:</p>
+  <p>Do you want to edit your info or delete your profile? <%= link_to "Just go here", edit_hyperglot_path  %></p>
+
+  <p>Here are the languages you're studying:</p>
+
+  
    
    <ul class="hyperglot-links">
     <li><%= @hyperglot.language_being_studied_1 %></li>

@@ -10,3 +10,5 @@
 <div>
   Average Teacher Rating: <%= @average_teacher_rating %>
   </div>
+
+  <p>Leave <%= link_to @teacher_rating.language_teacher.name, new_teacher_rating_path %> a new rating</p>
