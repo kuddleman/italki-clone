@@ -1,13 +1,14 @@
 # README
 
 I need a couple of model methods
+## DONE
 
 Add some CSS
 
 Think about USER Experience
 
    navigation bar
-
+   ## DONE
 
 
 HYPERGLOT:
@@ -76,7 +77,7 @@ Each teacher's name is a link to a show page
     ## DONE
 
 3.  The show page shows the teacher's average rating
-  ******CUSTOM METHOD TO DO*******   
+ ## DONE  
 
 2.  The rating should should be an integer from 1 to 5 (inclusive)
 ## DONE

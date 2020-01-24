@@ -13,3 +13,144 @@
  *= require_tree .
  *= require_self
  */
+
+   /* purple #a486ff
+   pink  #ff86e1 */
+
+   /* for links:
+   hover: grey #E5E5E5
+   visited: #ff86e1 */
+
+ body {
+  font-family: 'Fira Sans Condensed', sans-serif;
+ }
+
+ .wrapper {
+   width: 90%;
+   margin: 0 auto;
+ }
+
+ .topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a486ff;
+  display: flex;
+  justify-content: center
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.topnav li a:hover {
+  background-color: #ff86e1;
+}
+
+#top-title {
+  font-size: 2.5em;
+  color: #ff86e1;
+  text-align: center;
+}
+
+
+/* beginning of BLINK class */
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
+/* ending of BLINK class */
+
+.footer {
+  margin-top: 5em;
+  font-size: .8em;
+  text-align: center;
+}
+
+.hello-image {
+
+   display: block;
+   margin-top: 3em;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   border: 10px solid #D05FBF;
+}
+
+.links {
+  list-style-type: none;
+}
+
+.hy
+
+
+
+.teacher-links {
+  list-style-type:none;
+}
+
+.hyperglot-links {
+  list-style-type: none;
+}
+
+.links a:link {
+     color: black;
+     text-decoration: none;
+}
+
+.links a:visited {
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+.links a:hover {
+   color: #ff86e1 !important;
+   text-decoration: underline !important;
+}
+
+
+

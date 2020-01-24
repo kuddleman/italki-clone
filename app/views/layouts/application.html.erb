@@ -6,20 +6,30 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <h1>Welcome to the Italki Clone</h1>
-    <%= link_to "Home", about_path %>
-    <%= link_to "Hyperglots", hyperglots_path %>
-    <%= link_to "Language Teachers", language_teachers_path %>
-    <%= link_to "Lessons", lessons_path %>
-    <%= link_to "Study Comments", study_comments_path %>
-    <%= link_to "Teacher Ratings", teacher_ratings_path %>
-    <%= yield %>
-    <footer>
-     <p>Here's where I'll put a footer</p>
-    </footer>
+    <div class="wrapper">
+      <h1 id="top-title" class="blink">Welcome to the Italki Clone</h1>
+      <nav class="topnav">
+        <ul>
+          <li><%= link_to "Home", about_path %></li>
+          <li><%= link_to "Hyperglots", hyperglots_path %></li>
+          <li><%= link_to "Language Teachers", language_teachers_path %></li>
+          <li><%= link_to "Lessons", lessons_path %></li>
+          <li><%= link_to "Study Comments", study_comments_path %></li>
+          <li><%= link_to "Teacher Ratings", teacher_ratings_path %></li>
+        </ul>
+      </nav>
+      <%= yield %>
+      <footer class="footer">
+        <address>
+          Our Address: This Side of Eternity, Never-Never, CA  94115
+        </address>
+          <p>Copyright © 2020 No rights reserved. Just do anything you want!</p>
+      </footer>
+    </div>
   </body>
 </html>

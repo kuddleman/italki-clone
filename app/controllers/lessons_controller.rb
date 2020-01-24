@@ -6,6 +6,7 @@ class LessonsController < ApplicationController
 
   def show 
     @lesson = Lesson.find(params[:id])
+    # @lessons_per_hyperglot = Lesson.lessons_per_hyperglot(params[:id].count_lessons)
   end
 
   def new 
@@ -22,15 +23,7 @@ class LessonsController < ApplicationController
     end
   end
 
-  def find_hyperglot_with_most_lessons
-    most_lessons = 0
-    most_lesson_hyperglot = ''
-    #iterate over each hyperglot (test for nil lessons)
-     #and use .count to count their lessons
-     #if the count is more than most_lessons, set most_lessons to count
-       #and set that hyperglot to most_lesson_hyperglot
-     #return most_lesson_hyperglot
-  end
+  
 
 private 
 

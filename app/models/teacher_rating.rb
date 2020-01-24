@@ -7,7 +7,7 @@ class TeacherRating < ApplicationRecord
   validates :rating, inclusion: {in: 1..5, message: "The rating must be between 1 and 5"}
 
   def self.average_rating
-    average(:rating).to_f
+    average(:rating).to_f.round(2)
   end
 
   scope :ratings_for_teacher, ->(teacher_id) {where(language_teacher_id: teacher_id)}

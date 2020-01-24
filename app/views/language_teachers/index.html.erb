@@ -5,7 +5,7 @@
 
 <% @language_teachers.each do |teacher| %>
 
-<p>Teacher's name:<%= link_to teacher.name, language_teacher_path(teacher) %>,</p>
+<p class="links">Teacher's name:&nbsp;<%= link_to teacher.name, language_teacher_path(teacher) %>,</p>
  <p>Language taught: <%= teacher.language_taught %></p><br>
 <% end %>
  

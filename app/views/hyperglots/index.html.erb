@@ -1,9 +1,10 @@
 <h1>Here is a list of all hyperglots</h1>
+<h1>and the languages they are studying:</h1>
 <div>
 <% @hyperglots.each do |hyperglot| %>
-   <div>
+   <div class="links">
    <p><%= link_to hyperglot.name, hyperglot_path(hyperglot) %></p>
-    <ul>
+    <ul class="links">
       <li><%= hyperglot.language_being_studied_1 %></li>
       <li><%= hyperglot.language_being_studied_2 %></li>
       <li><%= hyperglot.language_being_studied_3 %></li>

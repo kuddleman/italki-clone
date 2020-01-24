@@ -5,16 +5,18 @@
 
   <p>And these are the languages you're studying:</p>
    
-   <ul>
+   <ul class="hyperglot-links">
     <li><%= @hyperglot.language_being_studied_1 %></li>
     <li><%= @hyperglot.language_being_studied_2 %></li>
     <li><%= @hyperglot.language_being_studied_3 %></li>
    </ul>
 
+   <h2>Congratulations!  You have completed <%= @hyperglot.count_lessons %> lessons!</h2>
+
    <h2>Here is a list of the dates on which you had a lesson:</h2>
 
    <h3>Click on a date to go to that lesson's info page:</h3>
-     <ul>
+     <ul class="hyperglot-links links">
      <% @hyperglot.lessons.each do |lesson| %>
          
            
