@@ -7,7 +7,7 @@
    <p class="links"> Hyperglot's name: <%= link_to @lesson.hyperglot.name, hyperglot_path %></p>  
  <% end %>
 
-<p class="links"> Language Teacher's name: <%= link_to @lesson.language_teacher.name, language_teacher_path %></p>
+<p class="links"> Language Teacher's name: <%= link_to @lesson.language_teacher.name, language_teacher_path(@lesson.language_teacher)  %></p>
 <p class="links"> Language Studied: <%= @lesson.language_teacher.language_taught %></p>
 </div>
 <h2 class="links">Ready to book another lesson? <%= link_to "Let's do it!", new_lesson_path %></h2>

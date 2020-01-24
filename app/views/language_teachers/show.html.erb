@@ -6,3 +6,8 @@
 <p> Language taught: 
 <%= @language_teacher.language_taught %></p>
 
+<p>These are the language teacher's lessons</p>
+
+<% @language_teacher.lessons.each do |lesson| %>
+   <%= lesson.lesson_date %>
+<% end %>

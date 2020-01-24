@@ -1,5 +1,9 @@
 # README
 
+A youtube tour of this site can be found here:
+
+https://youtu.be/XwAa8xvF1EY
+
 This is a Flatiron Code School Project for Module 2, Ruby on Rails.
 
 This project was presented in class on Friday, January 24, 2020 in
